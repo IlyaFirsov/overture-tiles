@@ -42,7 +42,12 @@
                             attribution: '© <a href="https://overturemaps.org">Overture Maps Foundation</a>'
                         }
                     },
-                    //layers: [...protomaps_themes_base.default("protomaps","black"),
+                    layers: [
+                    {
+                        'id': 'osm-tiles',
+                        'type': 'raster',
+                        'source': 'osm'
+                    },
                     {
                         'id':'overture-pois',
                         'type':'circle',
