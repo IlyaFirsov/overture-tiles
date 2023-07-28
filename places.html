@@ -30,11 +30,11 @@
                     version:8,
                     glyphs:'https://cdn.protomaps.com/fonts/pbf/{fontstack}/{range}.pbf',
                     sources: {
-                        "protomaps": {
-                            type: "vector",
-                            tiles: ["https://api.protomaps.com/tiles/v2/{z}/{x}/{y}.pbf?key=1003762824b9687f"],
-                            attribution: 'Protomaps © <a href="https://openstreetmap.org">OpenStreetMap</a>',
-                            maxzoom: 14
+                        "osm": {
+                            type: "raster",
+                            tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+                            attribution: '© <a href="https://openstreetmap.org">OpenStreetMap contributors</a>',
+                            maxzoom: 21
                         },
                         "overture-pois": {
                             type: "vector",
